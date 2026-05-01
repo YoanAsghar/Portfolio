@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "logo_subtitle": "Desarrollador FullStack",
+    "about": "Sobre mí",
+    "work": "Trabajo",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Joan",
+    "subtitle": "Desarrollo frontend atractivo, APIs REST escalables y bases de datos",
+    "cv_button": "CV / HV",
+    "cv_spanish": "Español (HV)",
+    "cv_english": "English (CV)"
+  },
+  "about": {
+    "section_sub": "Introducción",
+    "section_title": "Resumen.",
+    "description": "Soy un desarrollador de software con experiencia en JavaScript y TypeScript, y conocimientos en tecnologías backend como C#, ASP.NET y Entity Framework. Tengo experiencia en diseño y optimización de bases de datos con SQL, y en la creación de automatizaciones de flujo de trabajo con n8n. Aprendo rápido y colaboro estrechamente con los clientes para crear soluciones eficientes, escalables y robustas que resuelvan problemas reales. ¡Trabajemos juntos para dar vida a tus ideas!",
+    "services": {
+      "web_developer": "Desarrollador Web",
+      "backend_developer": "Desarrollador Backend",
+      "cli_developer": "Desarrollador de Herramientas CLI",
+      "automation_developer": "Desarrollador de Automatización"
+    }
+  },
+  "experience": {
+    "section_sub": "Lo que he hecho hasta ahora",
+    "section_title": "Experiencia Laboral.",
+    "entries": [
+      {
+        "title": "Intérprete médico",
+        "company": "Language line solutions",
+        "date": "Enero 2020 - Actual",
+        "points": [
+          "Facilitar la comunicación clara entre clientes de habla inglesa y española, garantizando una comprensión precisa de los requisitos técnicos y las especificaciones del proyecto.",
+          "Traducir información compleja en tiempo real manteniendo el contexto y la precisión técnica entre idiomas.",
+          "Construir relaciones sólidas con los clientes mediante la escucha activa y la conciencia cultural, esencial para la colaboración remota.",
+          "Manejar situaciones de alta presión y adaptar el estilo de comunicación a diferentes audiencias y niveles técnicos."
+        ]
+      }
+    ]
+  },
+  "tech": {
+    "html": "HTML 5",
+    "css": "CSS 3",
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "react": "React JS",
+    "aspnet": "ASP.NET",
+    "csharp": "C#",
+    "tailwind": "Tailwind CSS",
+    "node": "Node JS",
+    "git": "git",
+    "figma": "figma",
+    "n8n": "n8n",
+    "sql": "sql"
+  },
+  "works": {
+    "section_sub": "Mi trabajo",
+    "section_title": "Proyectos.",
+    "description": "Los siguientes proyectos muestran mis habilidades técnicas a través de iniciativas personales donde experimento con diferentes tecnologías e implemento soluciones prácticas. Cada proyecto se describe brevemente con enlaces a repositorios de código y demos en vivo, demostrando mi capacidad para enfrentar desafíos, aprender nuevas herramientas y entregar aplicaciones funcionales.",
+    "projects": [
+      {
+        "name": "Restaurant CRM",
+        "description": "Una solución integral para gestionar los procesos diarios internos de restaurantes, incluye control de mesas para crear, eliminar y editar mesas, pedidos y productos, desarrollado con react y asp.net + entity framework usando una API basada en controladores REST y actualizaciones en tiempo real en el frontend"
+      },
+      {
+        "name": "FoodMart",
+        "description": "FoodMart es una aplicación web integral para gestionar un restaurante o tienda de alimentos, con un robusto backend basado en .NET y un frontend web interactivo. Incluye implementaciones para autorización, autenticación y diferentes roles"
+      },
+      {
+        "name": "Default CLI",
+        "description": "Default es una aplicación versátil de interfaz de línea de comandos (CLI) en C# diseñada para consolidar varias herramientas de utilidad para desarrolladores en un solo paquete eficiente. Construida con .NET 10 y System.CommandLine, proporciona una arquitectura extensible para gestionar tareas, información del sistema y funciones de utilidad."
+      }
+    ]
+  },
+  "contact": {
+    "section_sub": "Ponte en contacto",
+    "section_title": "Contacto.",
+    "name_label": "Tu nombre",
+    "email_label": "Tu correo electrónico",
+    "message_label": "Tu mensaje",
+    "name_placeholder": "¿Cuál es tu nombre?",
+    "email_placeholder": "¿Cuál es tu correo electrónico?",
+    "message_placeholder": "¿Qué quieres decir?",
+    "send_button": "Enviar",
+    "sending_button": "Enviando...",
+    "success_alert": "Gracias. Me pondré en contacto contigo lo antes posible.",
+    "error_alert": "Vaya, algo salió mal. Por favor, inténtalo de nuevo."
+  }
+}

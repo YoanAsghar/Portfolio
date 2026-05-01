@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "logo_subtitle": "FullStack developer",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Joan",
+    "subtitle": "I develop beatiful frontend, scalable rest api's and databases",
+    "cv_button": "CV / HV",
+    "cv_spanish": "Español (HV)",
+    "cv_english": "English (CV)"
+  },
+  "about": {
+    "section_sub": "Introduction",
+    "section_title": "Overview.",
+    "description": "I'm a skilled software developer with experience in JavaScript and TypeScript, and expertise in backend technologies like C#, ASP.NET, and Entity Framework. I'm proficient in database design and optimization with SQL, and experienced in building workflow automations with n8n. I'm a quick learner who collaborates closely with clients to create efficient, scalable, and robust solutions that solve real-world problems. Let's work together to bring your ideas to life!",
+    "services": {
+      "web_developer": "Web Developer",
+      "backend_developer": "Backend Developer",
+      "cli_developer": "CLI Tools Developer",
+      "automation_developer": "Automation Developer"
+    }
+  },
+  "experience": {
+    "section_sub": "What I have done so far",
+    "section_title": "Work Experience.",
+    "entries": [
+      {
+        "title": "Medical interpreter",
+        "company": "Language line solutions",
+        "date": "January 2020 - Current",
+        "points": [
+          "Facilitating clear communication between English and Spanish-speaking clients, ensuring accurate understanding of technical requirements and project specifications.",
+          "Translating complex information in real-time while maintaining context and technical accuracy across languages.",
+          "Building strong client relationships through active listening and cultural awareness, essential for remote collaboration.",
+          "Managing high-pressure situations and adapting communication style to different audiences and technical levels."
+        ]
+      }
+    ]
+  },
+  "tech": {
+    "html": "HTML 5",
+    "css": "CSS 3",
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "react": "React JS",
+    "aspnet": "ASP.NET",
+    "csharp": "C#",
+    "tailwind": "Tailwind CSS",
+    "node": "Node JS",
+    "git": "git",
+    "figma": "figma",
+    "n8n": "n8n",
+    "sql": "sql"
+  },
+  "works": {
+    "section_sub": "My work",
+    "section_title": "Projects.",
+    "description": "The following projects showcase my technical skills through personal initiatives where I experiment with different technologies and implement practical solutions. Each project is briefly described with links to code repositories and live demos, demonstrating my ability to tackle challenges, learn new tools, and deliver functional applications.",
+    "projects": [
+      {
+        "name": "Restaurant CRM",
+        "description": "An integral solution to manage restaurants internal day to days process, includes tables control to create, delete and edit, tables, orders and products, developed with react and asp.net + entity framework using a rest controllers based api and real time updates in the frontend"
+      },
+      {
+        "name": "FoodMart",
+        "description": "FoodMart is a comprehensive web application for managing a restaurant or food mart, featuring a robust .NET-based backend and an interactive web-based frontend. includes implementations for authorization, authentication and different roles"
+      },
+      {
+        "name": "Default CLI",
+        "description": "Default is a versatile C# command-line interface (CLI) application designed to consolidate various utility tools for developers into a single, efficient package. Built with .NET 10 and System.CommandLine, it provides an extensible architecture for managing tasks, system information, and utility functions."
+      }
+    ]
+  },
+  "contact": {
+    "section_sub": "Get in touch",
+    "section_title": "Contact.",
+    "name_label": "Your Name",
+    "email_label": "Your email",
+    "message_label": "Your Message",
+    "name_placeholder": "What's your good name?",
+    "email_placeholder": "What's your web address?",
+    "message_placeholder": "What you want to say?",
+    "send_button": "Send",
+    "sending_button": "Sending...",
+    "success_alert": "Thank you. I will get back to you as soon as possible.",
+    "error_alert": "Ahh, something went wrong. Please try again."
+  }
+}

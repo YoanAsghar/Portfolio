@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -68,28 +69,32 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const { t } = useTranslation();
+
+  const translatedProjects = projects.map((project, idx) => ({
+    ...project,
+    name: t(`works.projects.${idx}.name`),
+    description: t(`works.projects.${idx}.description`),
+  }));
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>{t("works.section_sub")}</p>
+        <h2 className={`${styles.sectionHeadText}`}>{t("works.section_title")}</h2>
       </motion.div>
 
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >The following projects showcase my technical skills through personal 
-initiatives where I experiment with different technologies and implement 
-practical solutions. Each project is briefly described with links to code 
-repositories and live demos, demonstrating my ability to tackle challenges, 
-learn new tools, and deliver functional applications.
+        >{t("works.description")}
 
         </motion.p>
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
+        {translatedProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -24,6 +26,10 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
+  };
 
   return (
     <nav
@@ -45,11 +51,11 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Joan &nbsp;
-            <span className='sm:block hidden'> | FullStack developer</span>
+            <span className='sm:block hidden'> | {t("nav.logo_subtitle")}</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 items-center'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -58,9 +64,21 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}>{t(`nav.${nav.id}`)}</a>
             </li>
           ))}
+          <li className='flex items-center gap-2'>
+            <span className={`text-[14px] font-bold cursor-pointer ${i18n.language === "en" ? "text-white" : "text-secondary"}`}>EN</span>
+            <button
+              onClick={toggleLanguage}
+              className={`relative w-12 h-6 rounded-full transition-colors duration-300 ${i18n.language === "es" ? "bg-[#915EFF]" : "bg-gray-600"}`}
+            >
+              <div
+                className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full transition-transform duration-300 ${i18n.language === "es" ? "translate-x-6" : "translate-x-0"}`}
+              />
+            </button>
+            <span className={`text-[14px] font-bold cursor-pointer ${i18n.language === "es" ? "text-white" : "text-secondary"}`}>ES</span>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -88,9 +106,21 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`}>{t(`nav.${nav.id}`)}</a>
                 </li>
               ))}
+              <li className='flex items-center gap-2'>
+                <span className={`text-[14px] font-bold cursor-pointer ${i18n.language === "en" ? "text-white" : "text-secondary"}`}>EN</span>
+                <button
+                  onClick={toggleLanguage}
+                  className={`relative w-12 h-6 rounded-full transition-colors duration-300 ${i18n.language === "es" ? "bg-[#915EFF]" : "bg-gray-600"}`}
+                >
+                  <div
+                    className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full transition-transform duration-300 ${i18n.language === "es" ? "translate-x-6" : "translate-x-0"}`}
+                  />
+                </button>
+                <span className={`text-[14px] font-bold cursor-pointer ${i18n.language === "es" ? "text-white" : "text-secondary"}`}>ES</span>
+              </li>
             </ul>
           </div>
         </div>

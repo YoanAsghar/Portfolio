@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -36,22 +37,31 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const { t } = useTranslation();
+
+  const translatedServices = [
+    { title: t("about.services.web_developer"), icon: services[0].icon },
+    { title: t("about.services.backend_developer"), icon: services[1].icon },
+    { title: t("about.services.cli_developer"), icon: services[2].icon },
+    { title: t("about.services.automation_developer"), icon: services[3].icon },
+  ];
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t("about.section_sub")}</p>
+        <h2 className={styles.sectionHeadText}>{t("about.section_title")}</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >I'm a skilled software developer with experience in JavaScript and TypeScript, and expertise in backend technologies like C#, ASP.NET, and Entity Framework. I'm proficient in database design and optimization with SQL, and experienced in building workflow automations with n8n. I'm a quick learner who collaborates closely with clients to create efficient, scalable, and robust solutions that solve real-world problems. Let's work together to bring your ideas to life!
+      >{t("about.description")}
 
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
+        {translatedServices.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
