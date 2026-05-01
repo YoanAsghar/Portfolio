@@ -8,21 +8,18 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  restaurantcrm,
+  foodmart,
+  defaultCli,
+  aspnet,
+  csharp,
+  lls,
+  n8n,
+  sql
 } from "../assets";
 
 export const navLinks = [
@@ -46,17 +43,17 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "CLI Tools Developer",
     icon: creator,
   },
+  {
+    title: "Automation Developer",
+    icon: mobile,
+  }
 ];
 
 const technologies = [
@@ -81,8 +78,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "ASP.NET",
+    icon: aspnet,
+  },
+  {
+    name: "C#",
+    icon: csharp,
   },
   {
     name: "Tailwind CSS",
@@ -92,15 +93,7 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
+    {
     name: "git",
     icon: git,
   },
@@ -109,119 +102,58 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "n8n",
+    icon: n8n,
   },
+  {
+    name: "sql",
+    icon: sql
+  }
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Medical interpreter",
+    company_name: "Language line solutions",
+    icon: lls,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Facilitating clear communication between English and Spanish-speaking clients, ensuring accurate understanding of technical requirements and project specifications.",
+      "Translating complex information in real-time while maintaining context and technical accuracy across languages.",
+      "Building strong client relationships through active listening and cultural awareness, essential for remote collaboration.",
+      "Managing high-pressure situations and adapting communication style to different audiences and technical levels.",
     ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "January 2020 - Current",
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Restaurant CRM",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An integral solution to manage restaurants internal day to days process, includes tables control to create, delete and edit, tables, orders and products, developed with react and asp.net + entity framework using a rest controllers based api and real time updates in the frontend",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "asp.net",
         color: "pink-text-gradient",
       },
+      {
+        name: "postgreesql",
+        color: "green-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: restaurantcrm,
+    source_code_link: "https://github.com/YoanAsghar/RestaurantCRM",
   },
   {
-    name: "Job IT",
+    name: "FoodMart",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "FoodMart is a comprehensive web application for managing a restaurant or food mart, featuring a robust .NET-based backend and an interactive web-based frontend. includes implementations for authorization, authentication and different roles",
     tags: [
       {
         name: "react",
@@ -236,30 +168,26 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: foodmart,
+    source_code_link: "https://github.com/YoanAsghar/FoodMart",
   },
   {
-    name: "Trip Guide",
+    name: "Default CLI",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Default is a versatile C# command-line interface (CLI) application designed to consolidate various utility tools for developers into a single, efficient package. Built with .NET 10 and System.CommandLine, it provides an extensible architecture for managing tasks, system information, and utility functions.",
     tags: [
       {
-        name: "nextjs",
+        name: "C#",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "CommandLine",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: defaultCli,
+    source_code_link: "https://github.com/YoanAsghar/Default",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

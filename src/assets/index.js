@@ -7,6 +7,8 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import csharp from "./tech/csharp.png"
+import aspnet from "./tech/aspnet.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -20,15 +22,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import n8n from "./tech/n8n.png"
+import sql from "./tech/sql.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import lls from "./company/lls.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import restaurantcrm from "./restaurant_crm.png";
+import foodmart from "./foodmart.png";
+import defaultCli from "./default.png";
 
 export {
   logo,
@@ -39,6 +40,7 @@ export {
   github,
   menu,
   close,
+  aspnet,
   css,
   docker,
   figma,
@@ -52,11 +54,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  restaurantcrm,
+  foodmart,
+  defaultCli,
+  csharp,
+  lls,
+  n8n,
+  sql
 };
